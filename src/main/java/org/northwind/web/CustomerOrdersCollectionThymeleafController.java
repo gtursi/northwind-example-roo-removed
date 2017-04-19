@@ -28,9 +28,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.roo.addon.web.mvc.controller.annotations.ControllerType;
-import org.springframework.roo.addon.web.mvc.controller.annotations.RooController;
-import org.springframework.roo.addon.web.mvc.thymeleaf.annotations.RooThymeleaf;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -70,8 +67,6 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
  TODO Auto-generated class documentation
  *
  */
-@RooController(entity = CustomerOrder.class, type = ControllerType.COLLECTION)
-@RooThymeleaf
 @Controller
 @RequestMapping(value = "/customerorders", name = "CustomerOrdersCollectionThymeleafController", produces = MediaType.TEXT_HTML_VALUE)
 public class CustomerOrdersCollectionThymeleafController {

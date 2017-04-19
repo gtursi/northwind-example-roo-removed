@@ -10,10 +10,6 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
-import org.springframework.roo.addon.javabean.annotations.RooEquals;
-import org.springframework.roo.addon.javabean.annotations.RooJavaBean;
-import org.springframework.roo.addon.javabean.annotations.RooToString;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaEntity;
 
 import io.springlets.format.EntityFormat;
 
@@ -22,10 +18,6 @@ import io.springlets.format.EntityFormat;
  TODO Auto-generated class documentation
  *
  */
-@RooJavaBean
-@RooToString
-@RooJpaEntity(table = "NW_SOLD_PRODUCT_VIEW")
-@RooEquals(isJpaEntity = true)
 @Entity
 @Table(name = "NW_SOLD_PRODUCT_VIEW")
 @EntityFormat

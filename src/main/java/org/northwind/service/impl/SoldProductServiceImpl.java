@@ -7,7 +7,6 @@ import org.northwind.service.api.SoldProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.service.annotations.RooServiceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -18,7 +17,6 @@ import io.springlets.data.domain.GlobalSearch;
  TODO Auto-generated class documentation
  *
  */
-@RooServiceImpl(service = SoldProductService.class)
 @Service
 @Transactional(readOnly = true)
 public class SoldProductServiceImpl implements SoldProductService {

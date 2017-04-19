@@ -4,7 +4,6 @@ import org.northwind.domain.QRegion;
 import org.northwind.domain.Region;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.repository.jpa.annotations.RooJpaRepositoryCustomImpl;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
@@ -19,7 +18,6 @@ import io.springlets.data.jpa.repository.support.QueryDslRepositorySupportExt;
  TODO Auto-generated class documentation
  *
  */
-@RooJpaRepositoryCustomImpl(repository = RegionRepositoryCustom.class)
 @Transactional(readOnly = true)
 public class RegionRepositoryImpl extends QueryDslRepositorySupportExt<Region> implements RegionRepositoryCustom {
 

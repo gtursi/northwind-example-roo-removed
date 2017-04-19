@@ -3,7 +3,6 @@ import org.northwind.domain.Country;
 import org.northwind.domain.QCountry;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.repository.jpa.annotations.RooJpaRepositoryCustomImpl;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.querydsl.core.types.Path;
@@ -17,7 +16,6 @@ import io.springlets.data.jpa.repository.support.QueryDslRepositorySupportExt;
  TODO Auto-generated class documentation
  *
  */
-@RooJpaRepositoryCustomImpl(repository = CountryRepositoryCustom.class)
 @Transactional(readOnly = true)
 public class CountryRepositoryImpl extends QueryDslRepositorySupportExt<Country> implements CountryRepositoryCustom {
 

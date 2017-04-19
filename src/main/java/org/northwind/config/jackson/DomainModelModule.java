@@ -32,7 +32,6 @@ import org.northwind.web.SoldProductJsonMixin;
 import org.northwind.web.StoreJsonMixin;
 import org.northwind.web.SupplierJsonMixin;
 import org.springframework.boot.jackson.JsonComponent;
-import org.springframework.roo.addon.web.mvc.controller.annotations.config.RooDomainModelModule;
 
 import com.fasterxml.jackson.databind.module.SimpleModule;
 
@@ -41,7 +40,6 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
  TODO Auto-generated class documentation
  *
  */
-@RooDomainModelModule
 @JsonComponent
 public class DomainModelModule extends SimpleModule {
 

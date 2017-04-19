@@ -1,6 +1,4 @@
 package org.northwind.domain;
-import org.springframework.roo.addon.dto.annotations.RooDTO;
-import org.springframework.roo.addon.javabean.annotations.RooJavaBean;
 
 import io.springlets.format.EntityFormat;
 
@@ -9,8 +7,6 @@ import io.springlets.format.EntityFormat;
  TODO Auto-generated class documentation
  *
  */
-@RooDTO
-@RooJavaBean
 @EntityFormat
 public class ShipperPhoneFormBean {
 

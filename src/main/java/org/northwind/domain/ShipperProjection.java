@@ -1,10 +1,6 @@
 package org.northwind.domain;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
-import org.springframework.roo.addon.dto.annotations.RooEntityProjection;
-import org.springframework.roo.addon.javabean.annotations.RooEquals;
-import org.springframework.roo.addon.javabean.annotations.RooJavaBean;
-import org.springframework.roo.addon.javabean.annotations.RooToString;
 
 import io.springlets.format.EntityFormat;
 
@@ -13,10 +9,6 @@ import io.springlets.format.EntityFormat;
  TODO Auto-generated class documentation
  *
  */
-@RooJavaBean(settersByDefault = false)
-@RooToString
-@RooEquals
-@RooEntityProjection(entity = Shipper.class, fields = { "id", "companyName", "phone" })
 @EntityFormat
 public class ShipperProjection {
 

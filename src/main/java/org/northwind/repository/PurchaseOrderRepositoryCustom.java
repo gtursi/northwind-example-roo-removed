@@ -4,7 +4,6 @@ import org.northwind.domain.Product;
 import org.northwind.domain.PurchaseOrder;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.repository.jpa.annotations.RooJpaRepositoryCustom;
 
 import io.springlets.data.domain.GlobalSearch;
 
@@ -13,7 +12,6 @@ import io.springlets.data.domain.GlobalSearch;
  TODO Auto-generated class documentation
  *
  */
-@RooJpaRepositoryCustom(entity = PurchaseOrder.class)
 public interface PurchaseOrderRepositoryCustom {
 
     /**

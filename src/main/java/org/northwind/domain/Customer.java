@@ -8,11 +8,6 @@ import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.springframework.roo.addon.javabean.annotations.RooJavaBean;
-import org.springframework.roo.addon.javabean.annotations.RooToString;
-import org.springframework.roo.addon.jpa.annotations.entity.JpaRelationType;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaEntity;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaRelation;
 import org.springframework.util.Assert;
 
 import io.springlets.format.EntityFormat;
@@ -22,9 +17,6 @@ import io.springlets.format.EntityFormat;
  TODO Auto-generated class documentation
  *
  */
-@RooJavaBean
-@RooToString
-@RooJpaEntity(table = "NW_CUSTOMERS")
 @Entity
 @Table(name = "NW_CUSTOMERS")
 @EntityFormat
@@ -70,7 +62,6 @@ public class Customer extends Party {
      *
      */
     @OneToMany(cascade = { javax.persistence.CascadeType.MERGE, javax.persistence.CascadeType.PERSIST }, fetch = FetchType.LAZY, mappedBy = "customer")
-    @RooJpaRelation(type = JpaRelationType.AGGREGATION)
     private Set<CustomerOrder> customerOrders = new HashSet<CustomerOrder>();
 
     /**

@@ -26,13 +26,6 @@ import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.roo.addon.javabean.annotations.RooEquals;
-import org.springframework.roo.addon.javabean.annotations.RooJavaBean;
-import org.springframework.roo.addon.javabean.annotations.RooToString;
-import org.springframework.roo.addon.jpa.annotations.audit.RooJpaAudit;
-import org.springframework.roo.addon.jpa.annotations.entity.JpaRelationType;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaEntity;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaRelation;
 import org.springframework.util.Assert;
 
 import io.springlets.format.EntityFormat;
@@ -42,11 +35,6 @@ import io.springlets.format.EntityFormat;
  TODO Auto-generated class documentation
  *
  */
-@RooJavaBean
-@RooToString
-@RooJpaEntity(table = "NW_CITIES")
-@RooEquals(isJpaEntity = true)
-@RooJpaAudit
 @EntityListeners(AuditingEntityListener.class)
 @Entity
 @Table(name = "NW_CITIES")
@@ -83,7 +71,6 @@ public class City {
      *
      */
     @OneToMany(cascade = { javax.persistence.CascadeType.MERGE, javax.persistence.CascadeType.PERSIST }, fetch = FetchType.LAZY, mappedBy = "city")
-    @RooJpaRelation(type = JpaRelationType.AGGREGATION)
     private Set<Party> parties = new HashSet<Party>();
 
     /**
@@ -91,7 +78,6 @@ public class City {
      *
      */
     @OneToMany(cascade = { javax.persistence.CascadeType.MERGE, javax.persistence.CascadeType.PERSIST }, fetch = FetchType.LAZY, mappedBy = "city")
-    @RooJpaRelation(type = JpaRelationType.AGGREGATION)
     private Set<CustomerOrder> customerOrders = new HashSet<CustomerOrder>();
 
     /**
@@ -99,7 +85,6 @@ public class City {
      *
      */
     @OneToMany(cascade = { javax.persistence.CascadeType.MERGE, javax.persistence.CascadeType.PERSIST }, fetch = FetchType.LAZY, mappedBy = "city")
-    @RooJpaRelation(type = JpaRelationType.AGGREGATION)
     private Set<Store> stores = new HashSet<Store>();
 
     /**
@@ -107,7 +92,6 @@ public class City {
      *
      */
     @OneToMany(cascade = { javax.persistence.CascadeType.MERGE, javax.persistence.CascadeType.PERSIST }, fetch = FetchType.LAZY, mappedBy = "city")
-    @RooJpaRelation(type = JpaRelationType.AGGREGATION)
     private Set<Supplier> suppliers = new HashSet<Supplier>();
 
     /**

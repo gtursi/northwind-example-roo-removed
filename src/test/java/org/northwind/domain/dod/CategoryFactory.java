@@ -2,14 +2,12 @@ package org.northwind.domain.dod;
 import java.util.Calendar;
 
 import org.northwind.domain.Category;
-import org.springframework.roo.addon.jpa.annotations.entity.factory.RooJpaEntityFactory;
 
 /**
  * = CategoryFactory
  TODO Auto-generated class documentation
  *
  */
-@RooJpaEntityFactory(entity = Category.class)
 public class CategoryFactory {
 	
     /**

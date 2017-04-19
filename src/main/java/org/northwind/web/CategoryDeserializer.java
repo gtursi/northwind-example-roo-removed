@@ -8,7 +8,6 @@ import org.springframework.boot.jackson.JsonComponent;
 import org.springframework.boot.jackson.JsonObjectDeserializer;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.core.convert.ConversionService;
-import org.springframework.roo.addon.web.mvc.controller.annotations.config.RooDeserializer;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.ObjectCodec;
@@ -22,7 +21,6 @@ import io.springlets.web.NotFoundException;
  TODO Auto-generated class documentation
  *
  */
-@RooDeserializer(entity = Category.class)
 @JsonComponent
 public class CategoryDeserializer extends JsonObjectDeserializer<Category> {
 

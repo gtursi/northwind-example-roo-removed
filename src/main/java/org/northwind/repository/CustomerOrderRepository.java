@@ -6,7 +6,6 @@ import org.northwind.domain.CustomerOrder;
 import org.northwind.domain.Employee;
 import org.northwind.domain.Region;
 import org.northwind.domain.Shipper;
-import org.springframework.roo.addon.layers.repository.jpa.annotations.RooJpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 import io.springlets.data.jpa.repository.DetachableJpaRepository;
@@ -16,7 +15,6 @@ import io.springlets.data.jpa.repository.DetachableJpaRepository;
  TODO Auto-generated class documentation
  *
  */
-@RooJpaRepository(entity = CustomerOrder.class)
 @Transactional(readOnly = true)
 public interface CustomerOrderRepository extends DetachableJpaRepository<CustomerOrder, Long>, CustomerOrderRepositoryCustom {
 

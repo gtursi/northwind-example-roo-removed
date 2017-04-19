@@ -14,11 +14,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.roo.addon.javabean.annotations.RooJavaBean;
-import org.springframework.roo.addon.javabean.annotations.RooToString;
-import org.springframework.roo.addon.jpa.annotations.entity.JpaRelationType;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaEntity;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaRelation;
 import org.springframework.util.Assert;
 
 import io.springlets.format.EntityFormat;
@@ -28,9 +23,6 @@ import io.springlets.format.EntityFormat;
  TODO Auto-generated class documentation
  *
  */
-@RooJavaBean
-@RooToString
-@RooJpaEntity(table = "NW_EMPLOYEES")
 @Entity
 @Table(name = "NW_EMPLOYEES")
 @EntityFormat
@@ -103,7 +95,6 @@ public class Employee extends Party {
      *
      */
     @OneToMany(cascade = { javax.persistence.CascadeType.MERGE, javax.persistence.CascadeType.PERSIST }, fetch = FetchType.LAZY, mappedBy = "employee")
-    @RooJpaRelation(type = JpaRelationType.AGGREGATION)
     private Set<PurchaseOrder> purchaseOrders = new HashSet<PurchaseOrder>();
 
     /**
@@ -111,7 +102,6 @@ public class Employee extends Party {
      *
      */
     @OneToMany(cascade = { javax.persistence.CascadeType.MERGE, javax.persistence.CascadeType.PERSIST }, fetch = FetchType.LAZY, mappedBy = "employee")
-    @RooJpaRelation(type = JpaRelationType.AGGREGATION)
     private Set<CustomerOrder> customerOrders = new HashSet<CustomerOrder>();
 
     /**

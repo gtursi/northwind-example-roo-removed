@@ -6,7 +6,6 @@ import org.northwind.domain.Product;
 import org.northwind.domain.Supplier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.service.annotations.RooService;
 
 import io.springlets.data.domain.GlobalSearch;
 import io.springlets.format.EntityResolver;
@@ -16,7 +15,6 @@ import io.springlets.format.EntityResolver;
  TODO Auto-generated class documentation
  *
  */
-@RooService(entity = Product.class)
 public interface ProductService extends EntityResolver<Product, Long> {
 
     /**

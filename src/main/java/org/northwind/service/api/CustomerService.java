@@ -4,9 +4,6 @@ import java.util.List;
 import org.northwind.domain.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.service.annotations.RooService;
-import org.springframework.roo.addon.security.annotations.RooSecurityAuthorization;
-import org.springframework.roo.addon.security.annotations.RooSecurityAuthorizations;
 
 import io.springlets.data.domain.GlobalSearch;
 import io.springlets.format.EntityResolver;
@@ -16,8 +13,6 @@ import io.springlets.format.EntityResolver;
  TODO Auto-generated class documentation
  *
  */
-@RooService(entity = Customer.class)
-@RooSecurityAuthorizations(authorizations = { @RooSecurityAuthorization(method = "delete", parameters = { Customer.class }, roles = "ADMIN,EMPLEADO"), @RooSecurityAuthorization(method = "delete", parameters = { Iterable.class }, roles = "ADMIN,EMPLEADO") })
 public interface CustomerService extends EntityResolver<Customer, Long> {
 
     /**

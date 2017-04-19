@@ -1,7 +1,6 @@
 package org.northwind.web;
 import java.util.Map;
 
-import org.springframework.roo.addon.web.mvc.thymeleaf.annotations.RooLinkFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.util.UriComponents;
 
@@ -13,7 +12,6 @@ import io.springlets.web.mvc.util.SpringletsMvcUriComponentsBuilder;
  TODO Auto-generated class documentation
  *
  */
-@RooLinkFactory(controller = ProductsItemThymeleafController.class)
 @Component
 public class ProductsItemThymeleafLinkFactory implements MethodLinkFactory<ProductsItemThymeleafController> {
 

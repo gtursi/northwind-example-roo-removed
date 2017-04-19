@@ -7,14 +7,12 @@ import java.util.Collections;
 import org.junit.Test;
 import org.northwind.domain.dod.CategoryFactory;
 import org.northwind.domain.dod.ProductFactory;
-import org.springframework.roo.addon.jpa.annotations.test.RooJpaUnitTest;
 
 /**
  * = CategoryTest
  TODO Auto-generated class documentation
  *
  */
-@RooJpaUnitTest(targetClass = Category.class)
 public class CategoryTest {
 
     /**

@@ -4,8 +4,6 @@ import org.northwind.domain.Product;
 import org.northwind.domain.Supplier;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.repository.jpa.annotations.RooJpaRepository;
-import org.springframework.roo.addon.layers.repository.jpa.annotations.finder.RooFinder;
 import org.springframework.transaction.annotation.Transactional;
 
 import io.springlets.data.jpa.repository.DetachableJpaRepository;
@@ -15,7 +13,6 @@ import io.springlets.data.jpa.repository.DetachableJpaRepository;
  TODO Auto-generated class documentation
  *
  */
-@RooJpaRepository(entity = Product.class, finders = { @RooFinder(value = "findByDiscontinuedOrderByNameAsc", returnType = Product.class) })
 @Transactional(readOnly = true)
 public interface ProductRepository extends DetachableJpaRepository<Product, Long>, ProductRepositoryCustom {
 

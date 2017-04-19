@@ -3,7 +3,6 @@ import org.northwind.domain.City;
 import org.northwind.domain.Country;
 import org.northwind.domain.Region;
 import org.northwind.domain.Store;
-import org.springframework.roo.addon.layers.repository.jpa.annotations.RooJpaRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 import io.springlets.data.jpa.repository.DetachableJpaRepository;
@@ -13,7 +12,6 @@ import io.springlets.data.jpa.repository.DetachableJpaRepository;
  TODO Auto-generated class documentation
  *
  */
-@RooJpaRepository(entity = Store.class)
 @Transactional(readOnly = true)
 public interface StoreRepository extends DetachableJpaRepository<Store, Long>, StoreRepositoryCustom {
 

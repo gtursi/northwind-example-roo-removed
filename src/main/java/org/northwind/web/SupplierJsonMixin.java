@@ -6,7 +6,6 @@ import org.northwind.domain.Country;
 import org.northwind.domain.Product;
 import org.northwind.domain.Region;
 import org.northwind.domain.Supplier;
-import org.springframework.roo.addon.web.mvc.controller.annotations.config.RooJsonMixin;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -16,7 +15,6 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
  TODO Auto-generated class documentation
  *
  */
-@RooJsonMixin(entity = Supplier.class)
 public abstract class SupplierJsonMixin {
 
     @JsonDeserialize(using = CountryDeserializer.class)

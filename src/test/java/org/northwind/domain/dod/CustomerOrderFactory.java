@@ -11,14 +11,12 @@ import org.northwind.domain.Employee;
 import org.northwind.domain.Region;
 import org.northwind.domain.Shipper;
 import org.northwind.domain.Status;
-import org.springframework.roo.addon.jpa.annotations.entity.factory.RooJpaEntityFactory;
 
 /**
  * = CustomerOrderFactory
  TODO Auto-generated class documentation
  *
  */
-@RooJpaEntityFactory(entity = CustomerOrder.class)
 public class CustomerOrderFactory {
 	
    /**

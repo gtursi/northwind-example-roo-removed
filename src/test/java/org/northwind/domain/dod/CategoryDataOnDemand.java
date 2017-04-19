@@ -15,14 +15,12 @@ import javax.validation.ConstraintViolationException;
 
 import org.northwind.domain.Category;
 import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.roo.addon.jpa.annotations.dod.RooJpaDataOnDemand;
 
 /**
  * = CategoryDataOnDemand
  TODO Auto-generated class documentation
  *
  */
-@RooJpaDataOnDemand(entity = Category.class)
 @Configurable
 public class CategoryDataOnDemand {
 

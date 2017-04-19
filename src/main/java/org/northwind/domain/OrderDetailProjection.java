@@ -2,8 +2,6 @@ package org.northwind.domain;
 import java.math.BigDecimal;
 
 import org.springframework.format.annotation.NumberFormat;
-import org.springframework.roo.addon.dto.annotations.RooDTO;
-import org.springframework.roo.addon.javabean.annotations.RooJavaBean;
 
 import io.springlets.format.EntityFormat;
 
@@ -12,8 +10,6 @@ import io.springlets.format.EntityFormat;
  TODO Auto-generated class documentation
  *
  */
-@RooDTO(immutable = true)
-@RooJavaBean(settersByDefault = false)
 @EntityFormat
 public class OrderDetailProjection {
 

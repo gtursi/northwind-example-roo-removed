@@ -11,9 +11,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.roo.addon.web.mvc.controller.annotations.ControllerType;
-import org.springframework.roo.addon.web.mvc.controller.annotations.RooController;
-import org.springframework.roo.addon.web.mvc.controller.annotations.responses.json.RooJSON;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,8 +30,6 @@ import io.springlets.data.domain.GlobalSearch;
  TODO Auto-generated class documentation
  *
  */
-@RooController(entity = Customer.class, pathPrefix = "/api", type = ControllerType.COLLECTION)
-@RooJSON
 @RestController
 @RequestMapping(value = "/api/customers", name = "CustomersCollectionJsonController", produces = MediaType.APPLICATION_JSON_VALUE)
 public class CustomersCollectionJsonController {

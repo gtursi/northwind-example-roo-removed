@@ -1,6 +1,5 @@
 package org.northwind.web;
 import org.springframework.context.i18n.LocaleContextHolder;
-import org.springframework.roo.addon.web.mvc.thymeleaf.annotations.RooThymeleafMainController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -16,7 +15,6 @@ import io.springlets.web.NotFoundException;
  TODO Auto-generated class documentation
  *
  */
-@RooThymeleafMainController
 @Controller
 public class MainController {
 

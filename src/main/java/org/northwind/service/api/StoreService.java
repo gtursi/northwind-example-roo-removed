@@ -7,7 +7,6 @@ import org.northwind.domain.Region;
 import org.northwind.domain.Store;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.service.annotations.RooService;
 
 import io.springlets.data.domain.GlobalSearch;
 import io.springlets.format.EntityResolver;
@@ -17,7 +16,6 @@ import io.springlets.format.EntityResolver;
  TODO Auto-generated class documentation
  *
  */
-@RooService(entity = Store.class)
 public interface StoreService extends EntityResolver<Store, Long> {
 
     /**

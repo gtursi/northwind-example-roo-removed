@@ -7,9 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.roo.addon.web.mvc.controller.annotations.ControllerType;
-import org.springframework.roo.addon.web.mvc.controller.annotations.RooController;
-import org.springframework.roo.addon.web.mvc.controller.annotations.responses.json.RooJSON;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,8 +26,6 @@ import io.springlets.web.NotFoundException;
  TODO Auto-generated class documentation
  *
  */
-@RooController(entity = Store.class, pathPrefix = "/api", type = ControllerType.ITEM)
-@RooJSON
 @RestController
 @RequestMapping(value = "/api/stores/{store}", name = "StoresItemJsonController", produces = MediaType.APPLICATION_JSON_VALUE)
 public class StoresItemJsonController {

@@ -4,14 +4,12 @@ import java.math.BigDecimal;
 import org.northwind.domain.CustomerOrder;
 import org.northwind.domain.OrderDetail;
 import org.northwind.domain.Product;
-import org.springframework.roo.addon.jpa.annotations.entity.factory.RooJpaEntityFactory;
 
 /**
  * = OrderDetailFactory
  TODO Auto-generated class documentation
  *
  */
-@RooJpaEntityFactory(entity = OrderDetail.class)
 public class OrderDetailFactory {
 	
     /**

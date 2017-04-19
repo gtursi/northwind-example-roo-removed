@@ -15,14 +15,12 @@ import javax.validation.ConstraintViolationException;
 
 import org.northwind.domain.CustomerOrder;
 import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.roo.addon.jpa.annotations.dod.RooJpaDataOnDemand;
 
 /**
  * = CustomerOrderDataOnDemand
  TODO Auto-generated class documentation
  *
  */
-@RooJpaDataOnDemand(entity = CustomerOrder.class)
 @Configurable
 public class CustomerOrderDataOnDemand {
 

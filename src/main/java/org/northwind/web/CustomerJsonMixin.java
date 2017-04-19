@@ -3,7 +3,6 @@ import java.util.Set;
 
 import org.northwind.domain.Customer;
 import org.northwind.domain.CustomerOrder;
-import org.springframework.roo.addon.web.mvc.controller.annotations.config.RooJsonMixin;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -12,7 +11,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  TODO Auto-generated class documentation
  *
  */
-@RooJsonMixin(entity = Customer.class)
 public abstract class CustomerJsonMixin {
 
     @JsonIgnore

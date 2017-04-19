@@ -4,8 +4,6 @@ import org.northwind.domain.ShipperPhoneFormBean;
 import org.northwind.domain.ShipperProjection;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.repository.jpa.annotations.RooJpaRepository;
-import org.springframework.roo.addon.layers.repository.jpa.annotations.finder.RooFinder;
 import org.springframework.transaction.annotation.Transactional;
 
 import io.springlets.data.jpa.repository.DetachableJpaRepository;
@@ -15,7 +13,6 @@ import io.springlets.data.jpa.repository.DetachableJpaRepository;
  TODO Auto-generated class documentation
  *
  */
-@RooJpaRepository(entity = Shipper.class, finders = { @RooFinder(value = "findByCompanyName", returnType = Shipper.class), @RooFinder(value = "findByPhone", returnType = ShipperProjection.class, formBean = ShipperPhoneFormBean.class) })
 @Transactional(readOnly = true)
 public interface ShipperRepository extends DetachableJpaRepository<Shipper, Long>, ShipperRepositoryCustom {
 

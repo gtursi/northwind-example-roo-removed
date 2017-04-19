@@ -24,12 +24,6 @@ import javax.persistence.Version;
 
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.NumberFormat;
-import org.springframework.roo.addon.javabean.annotations.RooEquals;
-import org.springframework.roo.addon.javabean.annotations.RooJavaBean;
-import org.springframework.roo.addon.javabean.annotations.RooToString;
-import org.springframework.roo.addon.jpa.annotations.entity.JpaRelationType;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaEntity;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaRelation;
 import org.springframework.util.Assert;
 
 import io.springlets.format.EntityFormat;
@@ -39,10 +33,6 @@ import io.springlets.format.EntityFormat;
  TODO Auto-generated class documentation
  *
  */
-@RooJavaBean
-@RooToString
-@RooJpaEntity(table = "NW_CUSTOMER_ORDERS")
-@RooEquals(isJpaEntity = true)
 @Entity
 @Table(name = "NW_CUSTOMER_ORDERS")
 @EntityFormat
@@ -187,7 +177,6 @@ public class CustomerOrder {
      *
      */
     @OneToMany(cascade = { javax.persistence.CascadeType.MERGE, javax.persistence.CascadeType.PERSIST }, fetch = FetchType.LAZY, mappedBy = "customerOrder")
-    @RooJpaRelation(type = JpaRelationType.AGGREGATION)
     private Set<OrderDetail> orderDetails = new HashSet<OrderDetail>();
 
     /**

@@ -3,7 +3,6 @@ import org.northwind.domain.City;
 import org.northwind.domain.Country;
 import org.northwind.domain.Region;
 import org.northwind.domain.Store;
-import org.springframework.roo.addon.web.mvc.controller.annotations.config.RooJsonMixin;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
@@ -12,7 +11,6 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
  TODO Auto-generated class documentation
  *
  */
-@RooJsonMixin(entity = Store.class)
 public abstract class StoreJsonMixin {
 
     /**

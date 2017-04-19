@@ -24,13 +24,6 @@ import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.roo.addon.javabean.annotations.RooEquals;
-import org.springframework.roo.addon.javabean.annotations.RooJavaBean;
-import org.springframework.roo.addon.javabean.annotations.RooToString;
-import org.springframework.roo.addon.jpa.annotations.audit.RooJpaAudit;
-import org.springframework.roo.addon.jpa.annotations.entity.JpaRelationType;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaEntity;
-import org.springframework.roo.addon.jpa.annotations.entity.RooJpaRelation;
 import org.springframework.util.Assert;
 
 import io.springlets.format.EntityFormat;
@@ -40,11 +33,6 @@ import io.springlets.format.EntityFormat;
  TODO Auto-generated class documentation
  *
  */
-@RooJavaBean
-@RooToString
-@RooJpaEntity(table = "NW_CATEGORIES")
-@RooEquals(isJpaEntity = true)
-@RooJpaAudit
 @EntityListeners(AuditingEntityListener.class)
 @Entity
 @Table(name = "NW_CATEGORIES")
@@ -88,7 +76,6 @@ public class Category {
      *
      */
     @OneToMany(cascade = { javax.persistence.CascadeType.MERGE, javax.persistence.CascadeType.PERSIST }, fetch = FetchType.LAZY, mappedBy = "category")
-    @RooJpaRelation(type = JpaRelationType.AGGREGATION)
     private Set<Product> products = new HashSet<Product>();
 
     /**

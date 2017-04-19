@@ -20,10 +20,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.roo.addon.web.mvc.controller.annotations.ControllerType;
-import org.springframework.roo.addon.web.mvc.controller.annotations.RooController;
-import org.springframework.roo.addon.web.mvc.controller.annotations.RooDetail;
-import org.springframework.roo.addon.web.mvc.thymeleaf.annotations.RooThymeleaf;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -50,9 +46,6 @@ import io.springlets.web.mvc.util.MethodLinkBuilderFactory;
  TODO Auto-generated class documentation
  *
  */
-@RooController(entity = Region.class, type = ControllerType.DETAIL)
-@RooDetail(relationField = "cities")
-@RooThymeleaf
 @Controller
 @RequestMapping(value = "/regions/{region}/cities", name = "RegionsItemCitiesThymeleafController", produces = MediaType.TEXT_HTML_VALUE)
 public class RegionsItemCitiesThymeleafController {

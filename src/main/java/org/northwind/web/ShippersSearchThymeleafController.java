@@ -10,10 +10,6 @@ import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.data.domain.Page;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.roo.addon.web.mvc.controller.annotations.ControllerType;
-import org.springframework.roo.addon.web.mvc.controller.annotations.RooController;
-import org.springframework.roo.addon.web.mvc.controller.annotations.finder.RooSearch;
-import org.springframework.roo.addon.web.mvc.thymeleaf.annotations.RooThymeleaf;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,9 +29,6 @@ import io.springlets.data.web.datatables.DatatablesPageable;
  TODO Auto-generated class documentation
  *
  */
-@RooController(entity = Shipper.class, type = ControllerType.SEARCH)
-@RooSearch(finders = { "findByPhone" })
-@RooThymeleaf
 @Controller
 @RequestMapping(value = "/shippers/search", name = "ShippersSearchThymeleafController", produces = MediaType.TEXT_HTML_VALUE)
 public class ShippersSearchThymeleafController {

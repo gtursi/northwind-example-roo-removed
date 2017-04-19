@@ -9,7 +9,6 @@ import org.northwind.domain.Employee;
 import org.northwind.domain.OrderDetail;
 import org.northwind.domain.Region;
 import org.northwind.domain.Shipper;
-import org.springframework.roo.addon.web.mvc.controller.annotations.config.RooJsonMixin;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
@@ -19,7 +18,6 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
  TODO Auto-generated class documentation
  *
  */
-@RooJsonMixin(entity = CustomerOrder.class)
 public abstract class CustomerOrderJsonMixin {
 
     @JsonIgnore

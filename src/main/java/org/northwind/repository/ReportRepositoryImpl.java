@@ -3,7 +3,6 @@ import org.northwind.domain.QReport;
 import org.northwind.domain.Report;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.repository.jpa.annotations.RooJpaRepositoryCustomImpl;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.querydsl.core.types.Path;
@@ -17,7 +16,6 @@ import io.springlets.data.jpa.repository.support.QueryDslRepositorySupportExt;
  TODO Auto-generated class documentation
  *
  */
-@RooJpaRepositoryCustomImpl(repository = ReportRepositoryCustom.class)
 @Transactional(readOnly = true)
 public class ReportRepositoryImpl extends QueryDslRepositorySupportExt<Report> implements ReportRepositoryCustom {
 

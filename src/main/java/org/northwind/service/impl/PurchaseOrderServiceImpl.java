@@ -9,7 +9,6 @@ import org.northwind.service.api.PurchaseOrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.roo.addon.layers.service.annotations.RooServiceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,7 +19,6 @@ import io.springlets.data.domain.GlobalSearch;
  TODO Auto-generated class documentation
  *
  */
-@RooServiceImpl(service = PurchaseOrderService.class)
 @Service
 @Transactional(readOnly = true)
 public class PurchaseOrderServiceImpl implements PurchaseOrderService {

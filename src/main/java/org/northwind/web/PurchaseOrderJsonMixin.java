@@ -2,7 +2,6 @@ package org.northwind.web;
 import org.northwind.domain.Employee;
 import org.northwind.domain.Product;
 import org.northwind.domain.PurchaseOrder;
-import org.springframework.roo.addon.web.mvc.controller.annotations.config.RooJsonMixin;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
@@ -11,7 +10,6 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
  TODO Auto-generated class documentation
  *
  */
-@RooJsonMixin(entity = PurchaseOrder.class)
 public abstract class PurchaseOrderJsonMixin {
 
     /**
